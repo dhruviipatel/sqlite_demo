@@ -16,7 +16,7 @@ class Todo {
         title: map['title'] as String,
         createdAt: DateTime.fromMillisecondsSinceEpoch(map['created_at'])
             .toIso8601String(),
-        updatedAt: map['updatedAt'] == null
+        updatedAt: map['updated_at'] == null
             ? null
             : DateTime.fromMillisecondsSinceEpoch(map['updated_at'])
                 .toIso8601String());
